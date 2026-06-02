@@ -1,3 +1,20 @@
+## TF Reflection – Tinker: Playlist Chaos
+
+The core concept students needed to understand in this activity is that 
+AI-generated code can look polished and functional while containing subtle 
+logic bugs that only surface through careful testing. Students were most 
+likely to struggle with the search bug — where the condition `value in q` 
+is backwards and should be `q in value` — because the app does not crash, 
+it just silently returns wrong results. AI was helpful for explaining what 
+individual functions were doing, but potentially misleading when students 
+asked it to "fix" the bug without first understanding it, since the AI 
+could generate a plausible-looking patch that students couldn't defend. 
+The average energy stat bug (summing only Hype songs but dividing by all 
+songs) was the hardest to spot without manually calculating by hand. To 
+guide a student without giving the answer, I would ask: "Read that 
+condition out loud — what is it actually checking?" and let them reason 
+through the mismatch themselves.
+
 # Playlist Chaos
 
 Your AI assistant tried to build a smart playlist generator. The app runs, but some of the behavior is unpredictable. Your task is to explore the app, investigate the code, and use an AI assistant to debug and improve it.
